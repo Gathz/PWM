@@ -701,10 +701,22 @@
         </div>
 
         <script type="text/javascript">
-            if ('serviceWorker' in navigator) {
-              navigator.serviceWorker.register('./sw.js', { scope: './' }).then(reg => reg.update() && console.log('sw[update]'))
+            window.addEventListener('load', () => {
+                getNews();
+                registerSW();
+            })
+
+            async function registerSW() {
+                if ('serviceWorker' in navigator) {
+                    try {
+                        await navigator.serviceWorker.register('./sw.js');
+                    } catch (e) {
+                        console.log(`SW registration failed`);
+                    }
+                }
             }
         </script>
+
 
         <script type="text/javascript" src="./assets/js/frontend.min.js"></script>
 
