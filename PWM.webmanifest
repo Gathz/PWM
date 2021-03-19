@@ -1,7 +1,6 @@
 {
   "name": "PWM",
   "short_name": "PWM",
-  "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
   "description": "Password Manager",
@@ -46,5 +45,6 @@
         "sizes": "32x32",
         "type": "image/png"
       },
-  ]
+  ],
+  "start_url": "/"
 }
