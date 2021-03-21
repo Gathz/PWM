@@ -6,7 +6,9 @@
         <title>Password Manager</title>
         <meta name="description" content="Password Manager" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
-        <link rel="manifest" href="./PWM.webmanifest">
+        <link rel="stylesheet" type="text/css" href="./assets/css/frontend.min.css">
+        <link rel="manifest" href="manifest.json">
+        <!-- <link rel="manifest" href="./PWM.webmanifest"> -->
         <meta name="author" content="Gathz" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="apple-touch-icon" sizes="32x32" href="./assets/images/icons/icon-32x32.png">
@@ -20,7 +22,6 @@
         <link rel="icon" type="image/svg+xml" href="./assets/svg/favicon.svg"/>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <link rel="stylesheet" type="text/css" href="./assets/css/frontend.min.css">
     </head>
     <body>
 
@@ -700,7 +701,7 @@
             </div>
         </div>
 
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             window.addEventListener('load', () => {
                 registerSW();
             })
@@ -714,8 +715,20 @@
                     }
                 }
             }
-        </script>
+        </script> -->
 
+
+        <script type="text/javascript">
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("sw.js").then(registration => {
+                    console.log("SW Registered!");
+                    console.log(registration);
+                }).catch(error => {
+                    console.log("SW Registration Failed!");
+                    console.log(error);
+                })
+            }
+        </script>
 
         <script type="text/javascript" src="./assets/js/frontend.min.js"></script>
 

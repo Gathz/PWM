@@ -1,0 +1,8 @@
+{
+    "name": "Password Manager WebApp",
+    "short_name": "PWM",
+    "start_url": ".",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "standalone"
+}
