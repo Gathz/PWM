@@ -19,7 +19,7 @@ const staticAssets = [
   './assets/fonts/frontend/Quicksand-SemiBold.woff2',
   './assets/frontend.min.css',
   './assets/js/frontend.min.js',
-  './manifest.json',
+  // './manifest.json',
   './assets/images/icons/icon-32x32.png',
   './assets/images/icons/icon-76x76.png',
   './assets/images/icons/icon-120x120.png',
@@ -28,7 +28,7 @@ const staticAssets = [
   './assets/images/icons/icon-180x180.png',
   './assets/images/icons/icon-192x192.png',
   './assets/images/icons/icon-196x196.png',
-  './sw.js'
+  // './sw.js'
 ];
 
 self.addEventListener('install', async e => {
