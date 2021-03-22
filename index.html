@@ -701,7 +701,21 @@
             </div>
         </div>
 
+
         <script type="text/javascript">
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('./sw.js')
+                        .then(reg => {
+                            console.log('Registered! ', reg);
+                        }).catch(err => {
+                            console.log('Registration Failed! ', err);
+                        });
+                });
+            }
+        </script>
+
+        <!-- <script type="text/javascript">
             window.addEventListener('load', () => {
                 registerSW();
             })
@@ -715,7 +729,7 @@
                     }
                 }
             }
-        </script>
+        </script> -->
 
 
         <!-- <script type="text/javascript">
