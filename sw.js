@@ -71,7 +71,7 @@
 //   }
 // }
 
-const cacheName = 'cache-v1';
+const cacheName = 'cache-v2';
 const resourcesToPrecache = [
     '/',
     'index.html',
@@ -124,31 +124,31 @@ self.addEventListener('fetch', event => {
 });
 
 
-
-// Listen for beforeinstallprompt
-let deferredPrompt;
-// Notify the user to install
-window.addEventListener('beforeinstallprompt', (e) => {
-    // Prevent Chrome 67 and earlier from automatically showing the prompt
-    e.preventDefault();
-    // Stash the event so it can be triggered later
-    deferredPrompt = e;
-    // Update UI notify user thay can add to home screen
-    btnAdd.style.display = 'block';
-});
-
-// Show the prompt
-btnAdd.addEventListener('click', (e) => {
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then((choiceResult) => {
-        if (coicheResult.outcome === 'accepted') {
-            console.log('User accepted the A2HS prompt');
-        }
-        deferredPrompt = null;
-    });
-});
-
-// Confirming installations
-window.addEventListener('appinstalled', (evt) => {
-    app.logEvent('a2hs', 'installed');
-});
+//
+// // Listen for beforeinstallprompt
+// let deferredPrompt;
+// // Notify the user to install
+// window.addEventListener('beforeinstallprompt', (e) => {
+//     // Prevent Chrome 67 and earlier from automatically showing the prompt
+//     e.preventDefault();
+//     // Stash the event so it can be triggered later
+//     deferredPrompt = e;
+//     // Update UI notify user thay can add to home screen
+//     btnAdd.style.display = 'block';
+// });
+//
+// // Show the prompt
+// btnAdd.addEventListener('click', (e) => {
+//     deferredPrompt.prompt();
+//     deferredPrompt.userChoice.then((choiceResult) => {
+//         if (coicheResult.outcome === 'accepted') {
+//             console.log('User accepted the A2HS prompt');
+//         }
+//         deferredPrompt = null;
+//     });
+// });
+//
+// // Confirming installations
+// window.addEventListener('appinstalled', (evt) => {
+//     app.logEvent('a2hs', 'installed');
+// });
