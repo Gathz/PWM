@@ -1,9 +1,9 @@
-const cacheName = 'cache-v4';
+const cacheName = 'cache-v5';
 const resourcesToPrecache = [
     // '../',
     // '../index.html',
     '../assets/css/frontend.min.css',
-    // '../assets/js/frontend.min.js',
+    '../assets/js/frontend.min.js'
     // '../assets/fonts/frontend/Quicksand-Bold.ttf',
     // '../assets/fonts/frontend/Quicksand-Bold.woff',
     // '../assets/fonts/frontend/Quicksand-Bold.woff2',
