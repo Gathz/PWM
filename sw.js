@@ -19,7 +19,7 @@ const OFFLINE_URL = [
   "./assets/fonts/frontend/Quicksand-Regular.woff2",
   "./assets/fonts/frontend/Quicksand-SemiBold.ttf",
   "./assets/fonts/frontend/Quicksand-SemiBold.woff",
-  "./assets/fonts/frontend/Quicksand-SemiBold.woff2",
+  "./assets/fonts/frontend/Quicksand-SemiBold.woff2"
 ];
 
 self.addEventListener("install", (event) => {
