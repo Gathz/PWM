@@ -702,7 +702,17 @@
         </div>
 
 
+
         <script type="text/javascript">
+            window.addEventListener("load", () => {
+                if ("serviceWorker" in navigator) {
+                    navigator.serviceWorker.register("./sw.js");
+                }
+            });
+        </script>
+
+
+        <!-- <script type="text/javascript">
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', () => {
                     navigator.serviceWorker.register('./sw.js')
@@ -713,7 +723,12 @@
                         });
                 });
             }
-        </script>
+        </script> -->
+
+
+
+
+
 
         <!-- <script type="text/javascript">
             window.addEventListener('load', () => {
