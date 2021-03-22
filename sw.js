@@ -3,7 +3,24 @@
 const OFFLINE_VERSION = 1;
 const CACHE_NAME = "offline";
 // Customize this with a different URL if needed.
-const OFFLINE_URL = "./offline.html";
+const OFFLINE_URL = [
+  "./offline.html",
+  "./assets/fonts/frontend/Quicksand-Bold.ttf",
+  "./assets/fonts/frontend/Quicksand-Bold.woff",
+  "./assets/fonts/frontend/Quicksand-Bold.woff2",
+  "./assets/fonts/frontend/Quicksand-Light.ttf",
+  "./assets/fonts/frontend/Quicksand-Light.woff",
+  "./assets/fonts/frontend/Quicksand-Light.woff2",
+  "./assets/fonts/frontend/Quicksand-Medium.ttf",
+  "./assets/fonts/frontend/Quicksand-Medium.woff",
+  "./assets/fonts/frontend/Quicksand-Medium.woff2",
+  "./assets/fonts/frontend/Quicksand-Regular.ttf",
+  "./assets/fonts/frontend/Quicksand-Regular.woff",
+  "./assets/fonts/frontend/Quicksand-Regular.woff2",
+  "./assets/fonts/frontend/Quicksand-SemiBold.ttf",
+  "./assets/fonts/frontend/Quicksand-SemiBold.woff",
+  "./assets/fonts/frontend/Quicksand-SemiBold.woff2",
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
