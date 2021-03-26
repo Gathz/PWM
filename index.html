@@ -22,9 +22,20 @@
         <link rel="icon" type="image/svg+xml" href="./assets/svg/favicon.svg"/>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WLG4R5V');</script>
+        <!-- End Google Tag Manager -->
     </head>
     <body>
-
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLG4R5V"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <div class="canvasArea">
             <header class="header">
                 <nav class="header-navigation">
@@ -701,8 +712,6 @@
             </div>
         </div>
 
-
-
         <script type="text/javascript">
             window.addEventListener("load", () => {
                 if ("serviceWorker" in navigator) {
@@ -710,53 +719,6 @@
                 }
             });
         </script>
-
-
-        <!-- <script type="text/javascript">
-            if ('serviceWorker' in navigator) {
-                window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('./sw.js')
-                        .then(reg => {
-                            console.log('Registered! ', reg);
-                        }).catch(err => {
-                            console.log('Registration Failed! ', err);
-                        });
-                });
-            }
-        </script> -->
-
-
-
-
-
-
-        <!-- <script type="text/javascript">
-            window.addEventListener('load', () => {
-                registerSW();
-            })
-
-            async function registerSW() {
-                if ('serviceWorker' in navigator) {
-                    try {
-                        await navigator.serviceWorker.register('./sw.js');
-                    } catch (e) {
-                        console.log(`SW registration failed`);
-                    }
-                }
-            }
-        </script> -->
-
-        <!-- <script type="text/javascript">
-            if ("serviceWorker" in navigator) {
-                navigator.serviceWorker.register("./sw.js").then(registration => {
-                    console.log("SW Registered!");
-                    console.log(registration);
-                }).catch(error => {
-                    console.log("SW Registration Failed!");
-                    console.log(error);
-                })
-            }
-        </script> -->
 
         <script type="text/javascript" src="./assets/js/frontend.min.js"></script>
 
