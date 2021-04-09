@@ -8,6 +8,7 @@ const resourcesToPrecache = [
   "./assets/images/icons/icon-32x32.png",
   "./assets/images/icons/icon-76x76.png",
   "./assets/images/icons/icon-120x120.png",
+  "./assets/images/icons/icon-144x144.png",
   "./assets/images/icons/icon-152x152.png",
   "./assets/images/icons/icon-167x167.png",
   "./assets/images/icons/icon-180x180.png",
